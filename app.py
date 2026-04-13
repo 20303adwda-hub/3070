@@ -8,7 +8,8 @@ app = Flask(__name__)
 # 1. Stripe 金鑰設定 (請替換為您真實的測試金鑰)
 # ==========================================
 stripe.api_key = "sk_test_51TBmkYJ0xpZrLz6rXJYheSJ9XoZjotHrmCtNyeBOblHTC72pzYir85PMc549IFAUstK8106Sk6fOoNT25dngQ5Cf00qBUZN41h"          # Stripe Secret Key
-endpoint_secret = "whsec_sa8eStYFBrZ9Wt2hCZcpVKE2od5tGgj6"           # Stripe Webhook Secret
+# Stripe Webhook Secret (從您剛才提供的訊息)
+endpoint_secret = "whsec_zYwjLIct4kWNykDyE0AACXihZORiTPRh"
 
 # ==========================================
 # 2. 騰訊雲伺服器設定 (取代以前的 ThingSpeak)
