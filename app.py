@@ -82,7 +82,7 @@ def webhook():
     # 如果 Stripe 通知結帳已完成
     if event['type'] == 'checkout.session.completed':
         session = event['data']['object']
-        print(f"Payment successful for session: {session.get('id')}")
+        print(f"Payment successful for session: {session.id}")
 
         # 寫入狀態 5 (成功) 到騰訊雲伺服器
         notify_tencent_server(5)
